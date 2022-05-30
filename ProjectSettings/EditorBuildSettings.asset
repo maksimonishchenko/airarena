@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/WalkerScene.unity
+    guid: 9954b2b4263d3084987312d0b795d71d
   m_configObjects: {}

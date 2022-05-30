@@ -6,6 +6,9 @@
 [Bb]uilds/
 [Rr]esults/
 [Vv]env/
+AIWebGL/
+AIWebGL/*
+
 Assets/AssetStoreTools*
 
 # Visual Studio cache directory
