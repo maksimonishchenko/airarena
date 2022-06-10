@@ -3,7 +3,6 @@ using System.Numerics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Unity.MLAgents;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine.Events;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -26,7 +25,7 @@ namespace Unity.MLAgentsExamples
 
         [SerializeField] private float closearearadius = 1.44f;
         public float d;
-        
+        public Camera main;
         
         public Vector2 spawnX = new Vector2(-10, 10); //The region in which a target can be spawned.
         public Vector2 spawnY = new Vector2(0.5f, 1.5f);
@@ -61,6 +60,12 @@ namespace Unity.MLAgentsExamples
 
             индексаторреальноговремени = 0;
             transform.position = new Vector3(Mathf.Cos(буферугловградусов[индекс] * Mathf.Deg2Rad),0.5f,Mathf.Sin(буферугловградусов[индекс] * Mathf.Deg2Rad)) * радиусввиртметрахлинейных;
+			
+        }
+
+        void Start()
+        {
+           main = Camera.main;
         }
 
         private Vector3 расстояниядосекциисекунднойплощадкинаколизейномпериметре(int уголвградусах)
@@ -70,6 +75,8 @@ namespace Unity.MLAgentsExamples
 
         void FixedUpdate()
         {
+             
+
             d = Vector3.Distance(transform.position, agentSpine.transform.position);
             
             //var lefty = Vector3.Dot(transform.position - agentSpine.transform.position, agentSpine.transform.forward);
@@ -87,7 +94,9 @@ namespace Unity.MLAgentsExamples
                 var абсцисс = Mathf.Cos(буферугловградусов[индексмассива] * Mathf.Deg2Rad);
                 var оординат = Mathf.Sin(буферугловградусов[индексмассива] * Mathf.Deg2Rad);
                 
+                //main.transform.position + 
                 transform.position = new Vector3(абсцисс,0.5f,оординат) * радиусввиртметрахлинейных;
+				
             }
             //else --anglesdegsArrow;
             
