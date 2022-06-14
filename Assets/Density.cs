@@ -10,6 +10,9 @@ public class Density : MonoBehaviour
 	
     void Update()
     {
+		if(Time.realtimeSinceStartup > 1f && !main.enabled)
+			main.enabled = true;
+
 		d = Mathf.PingPong(Time.realtimeSinceStartup, 1);
         //RenderSettings.fogDensity = d;
 
