@@ -11,9 +11,9 @@ public class Density : MonoBehaviour
     void Update()
     {
 		d = Mathf.PingPong(Time.realtimeSinceStartup, 1);
-        RenderSettings.fogDensity = d;
+        //RenderSettings.fogDensity = d;
 
-		RenderSettings.fogColor = new Color(d+0.01f,0f,d, d);
+		//RenderSettings.fogColor = new Color(d+0.01f,0f,d, d);
 		
 		
     }
@@ -23,7 +23,7 @@ public class Density : MonoBehaviour
 		if(Time.realtimeSinceStartup > 1f && main.clearFlags != CameraClearFlags.Depth) 
 		{
 			v = !v;
-			main.clearFlags = CameraClearFlags.Depth;
+			//main.clearFlags = CameraClearFlags.Depth;
 		}
 	}
 

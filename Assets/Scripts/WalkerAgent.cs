@@ -112,7 +112,7 @@ namespace JKress.AITrainer
             //Reset all of the body parts
             foreach (var bodyPart in m_JdController.bodyPartsDict.Values)
             {
-                bodyPart.Reset(bodyPart);
+                //bodyPart.Reset(bodyPart);
             }
 
             //Random start rotation to help generalize
