@@ -59,7 +59,7 @@ namespace Unity.MLAgentsExamples
             }
 
             индексаторреальноговремени = 0;
-            transform.position = new Vector3(Mathf.Cos(буферугловградусов[индекс] * Mathf.Deg2Rad),0.5f,Mathf.Sin(буферугловградусов[индекс] * Mathf.Deg2Rad)) * радиусввиртметрахлинейных;
+            //перемещение цели transform.position = new Vector3(Mathf.Cos(буферугловградусов[индекс] * Mathf.Deg2Rad),0.5f,Mathf.Sin(буферугловградусов[индекс] * Mathf.Deg2Rad)) * радиусввиртметрахлинейных;
 			
         }
 
