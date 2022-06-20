@@ -19,9 +19,12 @@ public class LastAgentFollowerSide : MonoBehaviour
     void Update()
     {
         agents.RemoveAll(a=>a == null);
-        
+
         var lastAgentZ = agents.Min(g=>g.transform.Find("RobotKyle/OrientCube").position.z);
-        Debug.Log(lastAgentZ);
-        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x,transform.position.y,lastAgentZ) + shift,Time.deltaTime * speed);
+        var lastAgentX = agents.Min(g=>g.transform.Find("RobotKyle/OrientCube").position.x);
+        var lastAgentY = agents.Min(g=>g.transform.Find("RobotKyle/OrientCube").position.x);
+
+        //Debug.Log(lastAgentZ);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(lastAgentX + shift.x ,lastAgentY + shift.y,lastAgentZ + shift.z),Time.deltaTime * speed);
     }
 }

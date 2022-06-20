@@ -33,7 +33,7 @@ namespace JKress.AITrainer
                 {
                     for (int j = 0; j < zCount; j++)
                     {
-                        agents.Add( Instantiate(basePrefab[k], new Vector3(i * offsetX + behaviorOffset, 0, j * offsetZ),
+                        agents.Add( Instantiate(basePrefab[k], new Vector3(/*i **/ offsetX + behaviorOffset, 0, j * offsetZ),
                             Quaternion.identity));
                     }
                 }
