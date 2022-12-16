@@ -21,6 +21,14 @@ namespace JKress.AITrainer
         [Header("Training Type")] //If true, agent is penalized for moving away from target
         public bool earlyTraining = false;
 
+        public Transform TargetT
+        {
+            get
+            {
+                return targetT;
+            }
+        }
+        
         [Header("Target Goal")]
         [SerializeField] Transform targetT; //Target the agent will walk towards during training
         [SerializeField] TargetController targetController;
@@ -52,6 +60,7 @@ namespace JKress.AITrainer
         float m_minWalkingSpeed = 0.1f; 
         float m_maxWalkingSpeed = 4; 
 
+        
         public float MTargetWalkingSpeed // property
         {
             get { return m_TargetWalkingSpeed; }

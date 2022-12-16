@@ -1,10 +1,14 @@
 {
   "dependencies": {
-    "com.unity.collab-proxy": "1.15.16",
-    "com.unity.ide.rider": "3.0.14",
-    "com.unity.ide.visualstudio": "2.0.15",
+    "com.unity.ads": "4.1.0",
+    "com.unity.analytics": "3.7.1",
+    "com.unity.collab-proxy": "1.17.1",
+    "com.unity.ide.rider": "3.0.15",
+    "com.unity.ide.visualstudio": "2.0.16",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.ml-agents": "2.0.1",
+    "com.unity.postprocessing": "3.2.2",
+    "com.unity.purchasing": "4.1.5",
     "com.unity.test-framework": "1.1.31",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.1",
@@ -39,11 +43,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-	"com.unity.ads": "2.0.8",
-    "com.unity.analytics": "2.0.16",
-    
-    "com.unity.postprocessing": "2.3.0",
-    "com.unity.purchasing": "2.0.3"
+    "com.unity.modules.xr": "1.0.0"
   }
 }
