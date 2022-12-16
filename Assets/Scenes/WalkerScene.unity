@@ -3607,7 +3607,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4559779827675837288}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FullScreenWebGLExample, Assembly-CSharp
           m_MethodName: exitfullscreen
           m_Mode: 1
@@ -3671,7 +3671,6 @@ GameObject:
   - component: {fileID: 4559779827675837290}
   - component: {fileID: 4559779827675837285}
   - component: {fileID: 4559779827675837284}
-  - component: {fileID: 4559779827675837288}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3679,21 +3678,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4559779827675837288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4559779827675837287}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e136800f15dec54394db65b9047d3a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enterFullscreenBtn: {fileID: 4559779828597436936}
-  exitFullscreenBtn: {fileID: 4559779827174725193}
-  fullscreenNotSupportedText: {fileID: 4559779827969009075}
 --- !u!223 &4559779827675837290
 Canvas:
   m_ObjectHideFlags: 0
@@ -3966,7 +3950,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4559779827675837288}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FullScreenWebGLExample, Assembly-CSharp
           m_MethodName: enterfullscreen
           m_Mode: 1

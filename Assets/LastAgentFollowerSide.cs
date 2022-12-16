@@ -214,16 +214,16 @@ public class LastAgentFollowerSide : MonoBehaviour
     
     private void OnDrawGizmos()
     {
-        var center = CalculateCubeCastCenterPos();
-        var size = CalculateCubeSize();
-        Gizmos.DrawCube(center, size);
-        Gizmos.DrawLine(center,center + transform.forward * _m_MaxDistance);
-        Gizmos.DrawCube(center +  transform.forward * _m_MaxDistance, size);
-        
-        if (_colliders.Any(c => c.Any(col => col == _m_Hit.collider)))
-        {
-            Gizmos.DrawSphere(_m_Hit.point,0.1f);
-        }
+        //var center = CalculateCubeCastCenterPos();
+        //var size = CalculateCubeSize();
+        //Gizmos.DrawCube(center, size);
+        //Gizmos.DrawLine(center,center + transform.forward * _m_MaxDistance);
+        //Gizmos.DrawCube(center +  transform.forward * _m_MaxDistance, size);
+        //
+        //if (_colliders.Any(c => c.Any(col => col == _m_Hit.collider)))
+        //{
+        //    Gizmos.DrawSphere(_m_Hit.point,0.1f);
+        //}
     }
 
     private void Restart()
